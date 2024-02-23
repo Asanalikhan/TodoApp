@@ -17,17 +17,36 @@
         app:layout_constraintTop_toTopOf="parent" >
     </androidx.recyclerview.widget.RecyclerView>
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        android:src="@drawable/btn_add"-->
+<!--        android:contentDescription="@string/material_motion_easing_linear"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/rcTodo"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:backgroundTint="@color/white"
+        android:clickable="true"
         android:src="@drawable/btn_add"
         android:contentDescription="@string/material_motion_easing_linear"
-        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/rcTodo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:backgroundTint="#007AFF"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        android:focusable="true"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
