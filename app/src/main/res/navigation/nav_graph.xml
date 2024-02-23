@@ -9,5 +9,17 @@
         android:id="@+id/listFragment"
         android:name="com.example.noteapp.ListFragment"
         android:label="fragment_list"
-        tools:layout="@layout/fragment_list" />
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_changeFragment"
+            app:destination="@id/changeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeFragment"
+        android:name="com.example.noteapp.ChangeFragment"
+        android:label="ChangeFragment" >
+        <action
+            android:id="@+id/action_changeFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
 </navigation>

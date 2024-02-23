@@ -37,6 +37,4 @@ class TodoItemsRepository {
     fun addNewTodoItem(newItem: TodoItem) {
         toDoItems.add(newItem)
     }
-
-
 }

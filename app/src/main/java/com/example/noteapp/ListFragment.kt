@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.noteapp.databinding.FragmentListBinding
 
@@ -27,7 +28,12 @@ class ListFragment : Fragment() {
         binding.rcTodo.layoutManager = LinearLayoutManager(context)
         binding.rcTodo.adapter = adapter
 
+
         adapter.updateList(toDoItems.getTodoList())
+
+        binding.floatingActionButton.setOnClickListener {
+            findNavController().navigate(R.id.action_listFragment_to_changeFragment)
+        }
     }
 
 }
