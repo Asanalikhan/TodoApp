@@ -28,7 +28,6 @@ class ListFragment : Fragment() {
         binding.rcTodo.layoutManager = LinearLayoutManager(context)
         binding.rcTodo.adapter = adapter
 
-
         adapter.updateList(toDoItems.getTodoList())
 
         binding.floatingActionButton.setOnClickListener {

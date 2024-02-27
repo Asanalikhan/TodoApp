@@ -7,6 +7,8 @@
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:ellipsize="end"
         android:hint="Description" />
 
     <DatePicker
@@ -15,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/etDescription"
         android:layout_marginTop="16dp"
-        android:visibility="gone" /> <!-- Optional: Set visibility based on user interaction -->
+        android:visibility="gone" />
 
     <Spinner
         android:id="@+id/spinnerPriority"

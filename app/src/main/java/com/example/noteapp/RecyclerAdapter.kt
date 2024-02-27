@@ -4,8 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.noteapp.databinding.CellTodoBinding
-import java.text.SimpleDateFormat
-import java.util.Locale
 
 class RecyclerAdapter():RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
